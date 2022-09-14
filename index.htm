@@ -6,10 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
     <link rel="shortcut icon" href="./inifnityx.png" />
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js" integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous"></script>
+
     <title>Infinity</title>
     <style>
         button.more-about-x {
-            border-color: aqua;
+            border-color: rgb(246, 44, 13);
+        }
+        #app_image{
+          border-color: black;
+          
         }
     </style>
 </head>
@@ -22,14 +29,14 @@
             <span class="ml-3 text-xl">Infinity</span>
           </a>
           <nav class="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center">
-            <a class="mr-5 hover:text-gray-900">First Link</a>
-            <a class="mr-5 hover:text-gray-900">Second Link</a>
-            <a class="mr-5 hover:text-gray-900">Third Link</a>
-            <a class="mr-5 hover:text-gray-900">Fourth Link</a>
+            <a class="mr-5 hover:text-gray-900" href="#">About X</a>
+            <a class="mr-5 hover:text-gray-900" href="#">Contact Us</a>
+            <a class="mr-5 hover:text-gray-900" href="#">Future Updates </a>
+            <a class="mr-5 hover:text-gray-900" href="#">Internet Protection Details </a>
           </nav>
-          <button class="inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0">Button
+          <button class="inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0">Register
             <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
-              <path d="M5 12h14M12 5l7 7-7 7">A browser with mind blowing new features and with lots of privacy. No chance of selling you out with your data.</path>
+              <path d="M5 12h14M12 5l7 7-7 7">A browser with mind blowing new features and with lots of privacy. No chance of selling you out with your data. Today in this Internet generation world Internet with a Web Browser plays an important role </path>
             </svg>
           </button>
         </div>
@@ -39,17 +46,35 @@
     <!-- Body Starts-->
     <section class="text-gray-600 body-font">
         <div class="container mx-auto flex px-5 py-24 items-center justify-center flex-col">
-          <img class="lg:w-2/6 md:w-3/6 w-5/6 mb-10 object-cover object-center rounded" alt="hero" src="https://dummyimage.com/720x600">
+          <lottie-player src="https://assets5.lottiefiles.com/packages/lf20_rbrkxcqc.json" mode="bounce" background="transparent"  speed="1"  style="width: 300px; height: 300px;"  loop controls autoplay/>
           <div class="text-center lg:w-2/3 w-full">
             <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">Inifnity </h1>
-            <p class="mb-8 leading-relaxed">Browser with new and mind-blowing features. Now browsing internet made easy. You and Your data protected with 6 layes of security.</p>
+            <p class="mb-8 leading-relaxed">In this world, we all are surrounded by <b>Internet</b> & Internet without <b>Browser</b> is incomplete. So to make the internet complete we made a <b>New browser </b> name <b>Infinity-X</b> with special  features which are <b>not available </b> in other browsers. So to access this new <a href="#featured"><u>features</u></a> and layers of <b>Protection</b>. You can easily download our <b>X</b>. </p>
             <div class="flex justify-center">
-              <button class="inline-flex text-white bg-purple-500 border-0 py-2 px-6 focus:outline-none hover:bg-purple-600 rounded text-lg">Get X</button>
+              <button class="inline-flex text-white bg-purple-500 border-0 py-2 px-6 focus:outline-none hover:bg-purple-600 rounded text-lg"><img src="android-logo.png" height="30" width="30"> Download X</button>
               <button class="ml-4 inline-flex text-gray-700 bg-gray-100 border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-lg; more-about-x">More about X</button>
             </div>
           </div>
         </div>
       </section>
+      <!--<section class="text-gray-600 body-font">
+        <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
+          <div class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
+            <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
+              <img class="object-cover object-center rounded" alt="hero" src="https://dummyimage.com/250x400">
+            </div>
+            <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">Before they sold out
+              <br class="hidden lg:inline-block">inifnity
+            </h1>
+            <p class="mb-8 leading-relaxed">Browser with new and mind-blowing features. Now browsing internet made easy with X. You and Your data protected with 6 layes of security.</p>
+            <div class="flex justify-center">
+              <button class="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">Button</button>
+              <button class="ml-4 inline-flex text-gray-700 bg-gray-100 border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-lg">Button</button>
+            </div>
+          </div>
+          
+        </div>
+      </section>-->
     <!--Body Ends-->
 
     <!--Footer starts-->
@@ -62,8 +87,8 @@
             <span class="ml-3 text-xl">Inifnity
             </span>
           </a>
-          <p class="text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4">© 2020 Tailblocks —
-            <a href="https://twitter.com/knyttneve" class="text-gray-600 ml-1" rel="noopener noreferrer" target="_blank">@knyttneve</a>
+          <p class="text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4">© 2022 Infinity-X —
+            <a href="" class="text-gray-600 ml-1" rel="noopener noreferrer" target="_blank">@Vikhyat_Kumar_Singh</a>
           </p>
           <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
             <a class="text-gray-500">
@@ -92,6 +117,7 @@
         </div>
       </footer>
     <!--Footer Ends-->
-    
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
