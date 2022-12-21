@@ -4,54 +4,271 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="shortcut icon" href="./inifnityx.png" />
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js" integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous"></script>
+
+    <title>Infinity</title>
     <style>
-        #body{
-            background-color: #0f062887;
+        button.more-about-x {
+            border-color: rgb(246, 44, 13);
         }
-        
-        #banner{
-            text-align: center;
-            
+        #app_image{
+          border-color: black;
+          
         }
-        #search_bar{
-            height: "100";
-            width: "500";
-            border-radius: 50px;
-            padding: 1%;
-            padding-left: 2%;
-            padding-right: 2%;
-
-            display: block;
-            margin-right: auto;
-            margin-left: auto;
-        }
-
-        #search_engine_box{
-            background-color: white;
-            height: 50;
-            width: 300px;
-            padding: 2%;
-            border: 10px;
-            border-color: black;
-            border-radius: 10px;
-
-            margin-right: auto;
-            margin-left: auto;
+        #infinity_loading{
+          height: 100px;
+          width: 100px;
+          align-items: center;
+          
         }
     </style>
 </head>
-<body id="body">
-    <h1 id="banner">InfinityX</h1>
-    <input id="search_bar" placeholder="Search" type="text" size="30" style="font-size: 18px; ">
-    <br>
-    <div id="search_engine_box" >
-        <div>
-            <img src="https://cdn-icons-png.flaticon.com/512/2991/2991148.png" height="30" width="30">
-            <br>
-            <p1>google</p1>
+<body>
+    <!--Header Start-->
+
+    <header class="text-gray-400 bg-gray-900 body-font">
+      <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+        <a class="flex title-font font-medium items-center text-white mb-4 md:mb-0">
+          <img src="inifnityx.png" width="35" height="35">
+            
+          
+          <span class="ml-3 text-xl">Inifnity</span>
+        </a>
+        <nav class="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center">
+          <a class="mr-5 hover:text-gray-900" href="#">About X</a>
+          <a class="mr-5 hover:text-gray-900" href="#">Contact Us</a>
+          <a class="mr-5 hover:text-gray-900" href="#">Feature Updates </a>
+          <a class="mr-5 hover:text-gray-900" href="#">Internet Protection Details </a>
+        </nav>
+        <button class="inline-flex items-center bg-gray-800 border-0 py-1 px-3 focus:outline-none hover:bg-gray-700 rounded text-base mt-4 md:mt-0">Register
+          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
+            <path d="M5 12h14M12 5l7 7-7 7"></path>
+          </svg>
+        </button>
+      </div>
+    </header>
+    <!--Header Ends-->
+
+    <!-- Body Starts-->
+     <section class="text-gray-400 bg-gray-900 body-font">
+      <div class="container mx-auto flex px-5 py-2 items-center justify-center flex-col">
+        <lottie-player src="https://assets5.lottiefiles.com/packages/lf20_rbrkxcqc.json" mode="bounce" background="transparent"  speed="1"  style="width: 250px; height: 250px;"  loop autoplay/>
+      </div>
+    </section>
+
+      <section class="text-gray-400 bg-gray-900 body-font">
+        <div class="container mx-auto flex px-5 py-2 items-center justify-center flex-col">
+          
+          <div class="text-center lg:w-2/3 w-full">
+            <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-400">Inifnity </h1>
+            <p class="mb-8 leading-relaxed">In this world, we all are surrounded by <b>Internet</b> & Internet without <b>Browser</b> is incomplete. So to make the internet complete we made a <b>New browser </b> name <b>Infinity-X</b> with special  features which are <b>not available </b> in other browsers. So to access this new <a href="#featured"><u>features</u></a> and layers of <b>Protection</b>. You can easily download our <b>X</b>. </p>
+            <div class="flex justify-center">
+              <a href="download_x.htm"><button class="inline-flex text-white bg-purple-500 border-0 py-2 px-6 focus:outline-none hover:bg-purple-600 rounded text-lg" ><img src="android-logo.png" height="30" width="30"> Download X</button></a> 
+              <button class="ml-4 inline-flex text-gray-700 bg-gray-100 border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-lg; more-about-x">More about X</button>
+            </div>
+          </div>
         </div>
-        
-    </div>
+      </section>
+    <!--Body Ends-->
+
+    <hr />
+
+
+    <!--Features Starts-->
+    <section class="text-gray-400 bg-gray-900 body-font">
+      <div class="container px-5 py-24 mx-auto flex flex-wrap">
+        <div class="lg:w-1/2 w-full mb-10 lg:mb-0 rounded-lg overflow-hidden">
+  
+          <img class="banner" src="Frame 3.png" height="300" width="200" />
+  
+        </div>
+        <div class="flex flex-col flex-wrap lg:py-6 -mb-10 lg:w-1/2 lg:pl-12 lg:text-left text-center">
+          <div class="flex flex-col mb-10 lg:items-start items-center">
+            <div class="w-12 h-12 inline-flex items-center justify-center rounded-full bg-gray-800 text-indigo-400 mb-5">
+  
+  
+              <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink"
+                xmlns:svgjs="http://svgjs.com/svgjs" width="30" height="30" x="0" y="0" viewBox="0 0 64 64"
+                style="enable-background:new 0 0 512 512" xml:space="preserve" class="">
+                <g>
+                  <path
+                    d="m42.428 38.203c-.323.544-.693 1.068-1.109 1.566-.177.211-.149.527.063.704s.527.148.704-.063c.451-.54.851-1.106 1.202-1.695.141-.237.063-.544-.174-.685-.237-.142-.544-.064-.686.173zm1.411-3.555c-.139.622-.327 1.236-.564 1.834-.102.257.024.548.281.649.256.102.547-.024.649-.28.257-.648.46-1.312.61-1.986.06-.269-.11-.536-.38-.596-.269-.06-.537.11-.596.379zm.234-3.819c.061.638.072 1.279.033 1.919-.017.275.193.513.469.529.275.017.512-.193.529-.468.043-.692.031-1.386-.036-2.076-.026-.275-.271-.476-.545-.45-.275.026-.477.271-.45.546zm-.961-3.703c.258.59.467 1.196.627 1.813.069.267.342.427.61.358.267-.069.427-.342.358-.609-.173-.668-.4-1.325-.679-1.963-.111-.253-.406-.369-.659-.258s-.368.406-.257.659zm-2.071-3.216c.433.484.821.994 1.164 1.526.149.232.459.299.691.149.232-.149.299-.459.149-.691-.37-.575-.79-1.128-1.26-1.651-.184-.206-.5-.223-.706-.039-.205.184-.222.501-.038.706z"
+                    fill="#ffffff" data-original="#000000" class=""></path>
+                  <path
+                    d="m32 15c-9.383 0-17 7.617-17 17s7.617 17 17 17 17-7.617 17-17-7.617-17-17-17zm1 2.033c7.813.515 14 7.024 14 14.967s-6.187 14.452-14 14.967z"
+                    fill="#ffffff" data-original="#000000" class=""></path>
+                  <path
+                    d="m29.161 5.839v4.598c0 1.567 1.272 2.839 2.839 2.839s2.839-1.272 2.839-2.839v-4.598c0-1.567-1.272-2.839-2.839-2.839s-2.839 1.272-2.839 2.839z"
+                    fill="#ffffff" data-original="#000000" class=""></path>
+                  <path
+                    d="m48.491 11.494-3.251 3.251c-1.108 1.108-1.108 2.907 0 4.015s2.907 1.108 4.015 0c0 0 3.251-3.251 3.251-3.251 1.108-1.108 1.108-2.907 0-4.015s-2.907-1.108-4.015 0z"
+                    fill="#ffffff" data-original="#000000" class=""></path>
+                  <path
+                    d="m58.161 29.161h-4.598c-1.567 0-2.839 1.272-2.839 2.839s1.272 2.839 2.839 2.839h4.598c1.567 0 2.839-1.272 2.839-2.839s-1.272-2.839-2.839-2.839z"
+                    fill="#ffffff" data-original="#000000" class=""></path>
+                  <path
+                    d="m52.506 48.491-3.251-3.251c-1.108-1.108-2.907-1.108-4.015 0s-1.108 2.907 0 4.015c0 0 3.251 3.251 3.251 3.251 1.108 1.108 2.907 1.108 4.015 0s1.108-2.907 0-4.015z"
+                    fill="#ffffff" data-original="#000000" class=""></path>
+                  <path
+                    d="m34.839 58.161v-4.598c0-1.567-1.272-2.839-2.839-2.839s-2.839 1.272-2.839 2.839v4.598c0 1.567 1.272 2.839 2.839 2.839s2.839-1.272 2.839-2.839z"
+                    fill="#ffffff" data-original="#000000" class=""></path>
+                  <path
+                    d="m15.509 52.506 3.251-3.251c1.108-1.108 1.108-2.907 0-4.015s-2.907-1.108-4.015 0c0 0-3.251 3.251-3.251 3.251-1.108 1.108-1.108 2.907 0 4.015s2.907 1.108 4.015 0z"
+                    fill="#ffffff" data-original="#000000" class=""></path>
+                  <path
+                    d="m5.839 34.839h4.598c1.567 0 2.839-1.272 2.839-2.839s-1.272-2.839-2.839-2.839h-4.598c-1.567 0-2.839 1.272-2.839 2.839s1.272 2.839 2.839 2.839z"
+                    fill="#ffffff" data-original="#000000" class=""></path>
+                  <path
+                    d="m11.494 15.509 3.251 3.251c1.108 1.108 2.907 1.108 4.015 0s1.108-2.907 0-4.015c0 0-3.251-3.251-3.251-3.251-1.108-1.108-2.907-1.108-4.015 0s-1.108 2.907 0 4.015z"
+                    fill="#ffffff" data-original="#000000" class=""></path>
+                </g>
+              </svg>
+  
+            </div>
+            <div class="flex-grow">
+              <h2 class="text-white text-lg title-font font-medium mb-3">Dark Mode</h2>
+              <p class="leading-relaxed text-base">In todays date everyone work day and night, and mostly at night, so
+                because of it them get their eyes weak because of blue rays and high white ligth of screen while browsing
+                internet, so to reduce it we build dark mode feature which make the website get loads at dark theme.</p>
+              <a class="mt-3 text-indigo-400 inline-flex items-center">Learn More
+                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                  <path d="M5 12h14M12 5l7 7-7 7"></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="flex flex-col mb-10 lg:items-start items-center">
+            <div class="w-12 h-12 inline-flex items-center justify-center rounded-full bg-gray-800 text-indigo-400 mb-5">
+              <!--?xml version="1.0" encoding="iso-8859-1"?-->
+              <!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+              <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink"
+                xmlns:svgjs="http://svgjs.com/svgjs" width="30" height="30" x="0" y="0" viewBox="0 0 512 512"
+                style="enable-background:new 0 0 512 512" xml:space="preserve" class="">
+                <g transform="matrix(1,0,0,1,0,0)">
+                  <path d="m30 30h90v-30h-120v120h30zm0 0" fill="#ffffff" data-original="#000000" class=""></path>
+                  <path d="m392 0v30h90v90h30v-120zm0 0" fill="#ffffff" data-original="#000000" class=""></path>
+                  <path d="m482 482h-90v30h120v-120h-30zm0 0" fill="#ffffff" data-original="#000000" class=""></path>
+                  <path d="m30 392h-30v120h120v-30h-90zm0 0" fill="#ffffff" data-original="#000000" class=""></path>
+                  <path d="m61 60v150h150v-90h30v-30h-30v-30zm120 120h-90v-90h90zm0 0" fill="#ffffff"
+                    data-original="#000000" class=""></path>
+                  <path d="m451 450v-150h-60v-30h-30v30h-90v30h30v30h-30v30h30v60zm-120-120h90v90h-90zm0 0" fill="#ffffff"
+                    data-original="#000000" class=""></path>
+                  <path
+                    d="m151 270h60v-30h-150v30h60v30h-30v30h30v60h-30v30h30v30h150v-30h-30v-30h-30v30h-60v-30h30v-30h-30zm0 0"
+                    fill="#ffffff" data-original="#000000" class=""></path>
+                  <path d="m121 120h30v30h-30zm0 0" fill="#ffffff" data-original="#000000" class=""></path>
+                  <path d="m361 120h30v30h-30zm0 0" fill="#ffffff" data-original="#000000" class=""></path>
+                  <path d="m391 210h60v-150h-150v150h60v30h30zm-60-30v-90h90v90zm0 0" fill="#ffffff"
+                    data-original="#000000" class=""></path>
+                  <path d="m451 270v-30c-7.257812 0-52.691406 0-60 0v30zm0 0" fill="#ffffff" data-original="#000000"
+                    class=""></path>
+                  <path d="m361 360h30v30h-30zm0 0" fill="#ffffff" data-original="#000000" class=""></path>
+                  <path d="m241 330h30v30h-30zm0 0" fill="#ffffff" data-original="#000000" class=""></path>
+                  <path d="m181 360h30c0-7.257812 0-52.691406 0-60h-30zm0 0" fill="#ffffff" data-original="#000000"
+                    class=""></path>
+                  <path d="m211 270h30v30h-30zm0 0" fill="#ffffff" data-original="#000000" class=""></path>
+                  <path d="m91 330h-30v60h30c0-7.257812 0-52.691406 0-60zm0 0" fill="#ffffff" data-original="#000000"
+                    class=""></path>
+                  <path d="m61 420h30v30h-30zm0 0" fill="#ffffff" data-original="#000000" class=""></path>
+                  <path d="m241 60h30v30h-30zm0 0" fill="#ffffff" data-original="#000000" class=""></path>
+                  <path d="m241 180h30c0-7.257812 0-52.691406 0-60h-30zm0 0" fill="#ffffff" data-original="#000000"
+                    class=""></path>
+                  <path d="m271 240v-30h-30v60h120v-30zm0 0" fill="#ffffff" data-original="#000000" class=""></path>
+                </g>
+              </svg>
+  
+            </div>
+            <div class="flex-grow">
+              <h2 class="text-white text-lg title-font font-medium mb-3">QR Code transfer</h2>
+              <p class="leading-relaxed text-base">People who wants to tranfer or open web page in another device for
+                example laptop, tablets, etc. So for that they have to be the tha app, software from which they are
+                transfering. So</p>
+              <a class="mt-3 text-indigo-400 inline-flex items-center">Learn More
+                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                  <path d="M5 12h14M12 5l7 7-7 7"></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="flex flex-col mb-10 lg:items-start items-center">
+            <div class="w-12 h-12 inline-flex items-center justify-center rounded-full bg-gray-800 text-indigo-400 mb-5">
+              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                class="w-6 h-6" viewBox="0 0 24 24">
+                <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"></path>
+                <circle cx="12" cy="7" r="4"></circle>
+              </svg>
+            </div>
+            <div class="flex-grow">
+              <h2 class="text-white text-lg title-font font-medium mb-3">Search Text</h2>
+              <p class="leading-relaxed text-base">In web page sometime we wnat to find some words but sometime it become
+                very hard to find, so to fix this problem we have insert <b>search-text</b> feature.</p>
+              <a class="mt-3 text-indigo-400 inline-flex items-center">Learn More
+                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                  <path d="M5 12h14M12 5l7 7-7 7"></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--Features Ends-->
+
+    <!--Footer starts-->
+
+
+
+
+
+
+
+
+
+
+    <footer class="text-gray-00 bg-gray-900 body-font">
+        <div class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
+          <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-400">
+            <img src="data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHZpZXdCb3g9IjAgMCAxNzIgMTcyIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9Im5vbnplcm8iIHN0cm9rZT0ibm9uZSIgc3Ryb2tlLXdpZHRoPSIxIiBzdHJva2UtbGluZWNhcD0iYnV0dCIgc3Ryb2tlLWxpbmVqb2luPSJtaXRlciIgc3Ryb2tlLW1pdGVybGltaXQ9IjEwIiBzdHJva2UtZGFzaGFycmF5PSIiIHN0cm9rZS1kYXNob2Zmc2V0PSIwIiBmb250LWZhbWlseT0ibm9uZSIgZm9udC13ZWlnaHQ9Im5vbmUiIGZvbnQtc2l6ZT0ibm9uZSIgdGV4dC1hbmNob3I9Im5vbmUiIHN0eWxlPSJtaXgtYmxlbmQtbW9kZTogbm9ybWFsIj48cGF0aCBkPSJNMCwxNzJ2LTE3MmgxNzJ2MTcyeiIgZmlsbD0ibm9uZSI+PC9wYXRoPjxnIGZpbGw9IiNmZmZmZmYiPjxwYXRoIGQ9Ik00NS45MDI1LDQxLjI4Yy0yNC41OTA2MiwwIC00NC4xNDIxOSwxNy45MzkwNiAtNDUuOTAyNSw0MS4zODc1djEuMTgyNWMtMC4wNDAzMSwwLjc1MjUgLTAuMTA3NSwxLjQ5MTU2IC0wLjEwNzUsMi4yNTc1YzAsMC41NjQzOCAwLjA5NDA2LDEuMDg4NDQgMC4yMTUsMS42MTI1YzAuODA2MjUsMjQuNjMwOTQgMjAuMDA4NDQsNDMgNDUuMzY1LDQzYzE4LjYyNDM4LDAgMjguMTkxODgsLTExLjkwNTYyIDM1LjA0NSwtMjQuNjE3NWMtMi45MjkzNywtNC43MTY1NiAtNS41NzY1NiwtOS40NiAtOC4wNjI1LC0xNC4wODI1Yy02Ljc4NTk0LDE0LjkwMjE5IC0xMy4xMDE1NiwyNS4yNjI1IC0yNi45ODI1LDI1LjI2MjVjLTE4LjAzMzEyLDAgLTMxLjI0MjE5LC0xMi40NyAtMzEuOTI3NSwtMjkuNzc3NWMwLjA5NDA2LC0wLjQ0MzQ0IDAuMTA3NSwtMC45MjcxOSAwLjEwNzUsLTEuMzk3NWMwLC0xNy42OTcxOSAxMy44Njc1LC0zMS4wNjc1IDMyLjI1LC0zMS4wNjc1YzEzLjU1ODQ0LDAgMjEuMDU2NTYsMTIuMTc0MzggMzEuODIsMzIuMjVjMTAuODcwOTQsMjAuMjkwNjMgMjMuMjA2NTYsNDMuMzIyNSA1MC4wOTUsNDMuMzIyNWMyMi44ODQwNiwwIDQyLjI3NDM4LC0xOC40NjMxMiA0NC4wNzUsLTQxLjA2NWMwLjAyNjg4LC0wLjM4OTY5IDAuMDgwNjMsLTAuNzkyODEgMC4xMDc1LC0xLjE4MjVjMC4wNDAzMSwtMC43NTI1IDAuMTA3NSwtMS41MDUgMC4xMDc1LC0yLjI1NzVjMCwtMC41NjQzNyAtMC4wOTQwNiwtMS4wODg0NCAtMC4yMTUsLTEuNjEyNWMtMC44NDY1NiwtMjQuMzQ4NzUgLTIwLjI3NzE5LC00My4yMTUgLTQ1LjA0MjUsLTQzLjIxNWMtMTguODkzMTIsMCAtMjkuMTMyNSwxMi42MzEyNSAtMzYuNDQyNSwyNi4xMjI1YzEuOTM1LDMuMzg2MjUgMy42ODE4OCw2Ljg1MzEzIDUuNDgyNSwxMC4yMTI1YzAuODA2MjUsMS41MDUgMS41OTkwNiwyLjg4OTA2IDIuMzY1LDQuM2M2LjgxMjgxLC0xNC44ODg3NSAxMy43NDY1NiwtMjcuMTk3NSAyOC41OTUsLTI3LjE5NzVjMTguMDE5NjksMCAzMS4xMzQ2OSwxMi43NzkwNiAzMS42MDUsMzAuNDIyNWMtMC4wNDAzMSwwLjMwOTA2IC0wLjEwNzUsMC42NDUgLTAuMTA3NSwwLjk2NzVjMCwxNi4zODAzMSAtMTQuMjQzNzUsMzAuNzQ1IC0zMC41MywzMC43NDVjLTE4LjY1MTI1LDAgLTI4LjAxNzE5LC0xNy40ODIxOSAtMzcuOTQ3NSwtMzYuMDEyNWMtMTAuNDE0MDYsLTE5LjQ0NDA2IC0yMS4xOTA5NCwtMzkuNTYgLTQzLjk2NzUsLTM5LjU2eiI+PC9wYXRoPjwvZz48L2c+PC9zdmc+" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-purple-500 rounded-full" viewBox="0 0 24 24">
+            <span class="ml-3 text-xl">Inifnity
+            </span>
+          </a>
+          <p class="text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4">© 2022 Infinity-X —
+            <a href="" class="text-gray-600 ml-1" rel="noopener noreferrer" target="_blank">@Vikhyat_Kumar_Singh</a>
+          </p>
+          <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
+            <a class="text-gray-500">
+              <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+              </svg>
+            </a>
+            <a class="ml-3 text-gray-500">
+              <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+              </svg>
+            </a>
+            <a class="ml-3 text-gray-500">
+              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+              </svg>
+            </a>
+            <a class="ml-3 text-gray-500">
+              <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
+                <path stroke="none" d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
+                <circle cx="4" cy="4" r="2" stroke="none"></circle>
+              </svg>
+            </a>
+          </span>
+        </div>
+      </footer>
+    <!--Footer Ends-->
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
