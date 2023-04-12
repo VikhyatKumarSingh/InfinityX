@@ -11,9 +11,7 @@
 
     <title>Infinity</title>
     <style>
-        button.more-about-x {
-            border-color: rgb(246, 44, 13);
-        }
+      
         #app_image{
           border-color: black;
           
@@ -27,11 +25,23 @@
 
         #body {
           margin-top: 0px;
+         
+        }
+
+        #whole-body {
           width: 100%;
         }
+        html,body
+{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+}
     </style>
 </head>
-<body >
+<body id="whole-body">
     <!--Header Start-->
 
     <header class="text-gray-400 bg-gray-900 body-font">
@@ -56,9 +66,7 @@
       </div>
     </header>
     <!--Header Ends-->
-
-    
-
+<br class="text-gray-400 bg-gray-900" >
     <!-- Body Starts-->
      <section class="text-gray-400 bg-gray-900 body-font" >
       <div class="container mx-auto flex px-5 py-10 items-center justify-center flex-col" id="body">
