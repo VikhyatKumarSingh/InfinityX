@@ -1,111 +1,170 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
-    <link rel="shortcut icon" href="./inifnityx.png" />
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js" integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous"></script>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="shortcut icon" href="/Images/inifnityx.png" />
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+    integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz"
+    crossorigin="anonymous"></script>
 
-    <title>Infinity</title>
-    <style>
-        button.more-about-x {
-            border-color: rgb(246, 44, 13);
-        }
-        #app_image{
-          border-color: black;
-          
-        }
-        #infinity_loading{
-          height: 100px;
-          width: 100px;
-          align-items: center;
-          
-        }
-    </style>
+  <title>Infinity</title>
+  <style>
+    button.more-about-x {
+      border-color: rgb(246, 44, 13);
+    }
+
+    #app_image {
+      border-color: black;
+
+    }
+
+    #infinity_loading {
+      height: 100px;
+      width: 100px;
+      align-items: center;
+
+    }
+  </style>
 </head>
+
 <body>
-    <!--Header Start-->
+  <!--Header Start-->
+  <header class="text-gray-600 body-font">
+    <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+      <a href="/index.htm" class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+        <img src="/Images/inifnityx.png" width="60" height="60">
+        <span class="ml-3 text-xl">Inifnity</span>
+      </a>
+      <nav class="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center">
+        <a class="mr-5 hover:text-gray-900" href="#about">Infinity-X</a>
+        <a class="mr-5 hover:text-gray-900" href="#platforms">Platforms</a>
+        <a class="mr-5 hover:text-gray-900" href="#gallery">Gallery</a>
+      </nav>
+      <button
+        class="inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0">Download
+        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+          class="w-4 h-4 ml-1" viewBox="0 0 24 24">
+          <path d="M5 12h14M12 5l7 7-7 7"></path>
+        </svg>
+      </button>
+    </div>
+  </header>
+  <!--Header Ends-->
 
-    <header class="text-gray-400 bg-gray-900 body-font">
-      <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
-        <a class="flex title-font font-medium items-center text-white mb-4 md:mb-0">
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-purple-500 rounded-full" viewBox="0 0 24 24">
-            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
-          </svg>
-          <span class="ml-3 text-xl">Tailblocks</span>
-        </a>
-        <nav class="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center">
-          <a class="mr-5 hover:text-gray-900" href="#">About X</a>
-          <a class="mr-5 hover:text-gray-900" href="#">Contact Us</a>
-          <a class="mr-5 hover:text-gray-900" href="#">Future Updates </a>
-          <a class="mr-5 hover:text-gray-900" href="#">Internet Protection Details </a>
-        </nav>
-        <button class="inline-flex items-center bg-gray-800 border-0 py-1 px-3 focus:outline-none hover:bg-gray-700 rounded text-base mt-4 md:mt-0">Register
-          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
-            <path d="M5 12h14M12 5l7 7-7 7"></path>
-          </svg>
-        </button>
+  <!--Download Starts-->
+  <section class="text-gray-600 body-font" id="about">
+    <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
+      <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
+        <img class="object-cover object-center rounded" alt="hero" src="https://dummyimage.com/720x600">
       </div>
-    </header>
-    <!--Header Ends-->
+      <div
+        class="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
+        <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">Downoad Infinity-X
+        </h1>
+        <p class="mb-8 leading-relaxed">X is not available on Google Play Store or on Apple App Store, but still you can download it from other App Stores i.e. Oppo App Market, Samsung Galaxy Stores</p>
+        <div class="flex w-full md:justify-start justify-center items-end">
+          <div class="relative mr-4 lg:w-full xl:w-1/2 w-2/4">
+            <label for="hero-field" class="leading-7 text-sm text-gray-600">Queries</label>
+            <input type="text" id="hero-field" name="hero-field"
+              class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:ring-2 focus:ring-indigo-200 focus:bg-transparent focus:border-indigo-500 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+          </div>
+          <button
+            class="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">Sends</button>
+        </div>
+        <p class="text-sm mt-2 text-gray-500 mb-8 w-full"></p>
+        <div class="flex lg:flex-row md:flex-col" id="platforms">
+          <button
+            class="bg-gray-100 inline-flex py-3 px-5 rounded-lg items-center hover:bg-gray-200 focus:outline-none">
 
-    <!-- Body Starts-->
-     
-    <!--Body Ends-->
-
-    <!--Footer starts-->
-
-
-
-
-
-
-
-
-
-
-    <footer class="text-gray-400 bg-gray-900 body-font">
-      <div class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
-        <a class="flex title-font font-medium items-center md:justify-start justify-center text-white">
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-purple-500 rounded-full" viewBox="0 0 24 24">
-            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
-          </svg>
-          <span class="ml-3 text-xl">Tailblocks</span>
-        </a>
-        <p class="text-sm text-gray-400 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-800 sm:py-2 sm:mt-0 mt-4">© 2020 Tailblocks —
-          <a href="https://twitter.com/knyttneve" class="text-gray-500 ml-1" target="_blank" rel="noopener noreferrer">@knyttneve</a>
-        </p>
-        <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
-          <a class="text-gray-400">
-            <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
-              <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+            <svg xmlns="http://www.w3.org/2000/svg" data-name="Layer 1" viewBox="0 0 24 24" id="amazon" class="w-6 h-6">
+              <path
+                d="M1.04,17.52q.1-.16.32-.02a21.3078,21.3078,0,0,0,10.88,2.9,21.52431,21.52431,0,0,0,7.74-1.46q.1-.04.29-.12t.27-.12a.35611.35611,0,0,1,.47.12q.17.24-.11.44-.36.26-.92.6a14.99023,14.99023,0,0,1-3.84,1.58A16.1749,16.1749,0,0,1,12,22a16.01714,16.01714,0,0,1-5.9-1.09,16.24638,16.24638,0,0,1-4.98-3.07.273.273,0,0,1-.12-.2A.215.215,0,0,1,1.04,17.52Zm6.02-5.7a4.03628,4.03628,0,0,1,.68-2.36A4.19676,4.19676,0,0,1,9.6,7.98a10.06288,10.06288,0,0,1,2.66-.66q.54-.06,1.76-.16V6.82a3.56151,3.56151,0,0,0-.28-1.72,1.49917,1.49917,0,0,0-1.32-.6h-.16a2.18852,2.18852,0,0,0-1.14.42,1.63936,1.63936,0,0,0-.62,1,.50779.50779,0,0,1-.4.46L7.8,6.1q-.34-.08-.34-.36a.58734.58734,0,0,1,.02-.14A3.83352,3.83352,0,0,1,9.15,2.96,6.26811,6.26811,0,0,1,12.26,2h.5a5.05441,5.05441,0,0,1,3.56,1.18,3.81,3.81,0,0,1,.37.43,3.8746,3.8746,0,0,1,.27.41,2.09844,2.09844,0,0,1,.18.52q.08.34.12.47a2.85611,2.85611,0,0,1,.06.56q.02.43.02.51v4.84a2.86841,2.86841,0,0,0,.15.95,2.47465,2.47465,0,0,0,.29.62q.14.19.46.61a.59856.59856,0,0,1,.12.32.346.346,0,0,1-.16.28q-1.66,1.44-1.8,1.56a.557.557,0,0,1-.58.04q-.28-.24-.49-.46t-.3-.32a4.46629,4.46629,0,0,1-.29-.39q-.2-.29-.28-.39a4.91083,4.91083,0,0,1-2.2,1.52,6.03757,6.03757,0,0,1-1.68.2,3.50454,3.50454,0,0,1-2.53-.95A3.553,3.553,0,0,1,7.06,11.82Zm3.44-.4a1.89505,1.89505,0,0,0,.39,1.25,1.29375,1.29375,0,0,0,1.05.47,1.022,1.022,0,0,0,.17-.02,1.02168,1.02168,0,0,1,.15-.02,2.03262,2.03262,0,0,0,1.3-1.08,3.13045,3.13045,0,0,0,.33-.83,3.80062,3.80062,0,0,0,.12-.73q.01-.28.01-.92v-.5a7.28689,7.28689,0,0,0-1.76.16A2.1441,2.1441,0,0,0,10.5,11.42Zm8.4,6.44a.62647.62647,0,0,1,.12-.16,3.13921,3.13921,0,0,1,.96-.46,6.52032,6.52032,0,0,1,1.48-.22,1.19457,1.19457,0,0,1,.38.02q.9.08,1.08.3a.65471.65471,0,0,1,.08.36v.14a4.55955,4.55955,0,0,1-.38,1.65,3.84046,3.84046,0,0,1-1.06,1.53.302.302,0,0,1-.18.08.17736.17736,0,0,1-.08-.02q-.12-.06-.06-.22a7.63215,7.63215,0,0,0,.74-2.42.51274.51274,0,0,0-.08-.32q-.2-.24-1.12-.24-.34,0-.8.04-.5.06-.92.12A.23166.23166,0,0,1,18.9,18a.06531.06531,0,0,1-.02-.08A.15332.15332,0,0,1,18.9,17.86Z">
+              </path>
             </svg>
-          </a>
-          <a class="ml-3 text-gray-400">
-            <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
-              <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+            <span class="ml-4 flex items-start flex-col leading-none">
+              <span class="text-xs text-gray-600 mb-1">GET IT ON</span>
+              <span class="title-font font-medium">Amazon</span>
+            </span>
+          </button>
+          <button
+            class="bg-gray-100 inline-flex py-3 px-5 rounded-lg items-center lg:ml-4 md:ml-0 ml-4 md:mt-4 mt-0 lg:mt-0 hover:bg-gray-200 focus:outline-none">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="w-6 h-6" viewBox="0 0 305 305">
+              <path
+                d="M40.74 112.12c-25.79 44.74-9.4 112.65 19.12 153.82C74.09 286.52 88.5 305 108.24 305c.37 0 .74 0 1.13-.02 9.27-.37 15.97-3.23 22.45-5.99 7.27-3.1 14.8-6.3 26.6-6.3 11.22 0 18.39 3.1 25.31 6.1 6.83 2.95 13.87 6 24.26 5.81 22.23-.41 35.88-20.35 47.92-37.94a168.18 168.18 0 0021-43l.09-.28a2.5 2.5 0 00-1.33-3.06l-.18-.08c-3.92-1.6-38.26-16.84-38.62-58.36-.34-33.74 25.76-51.6 31-54.84l.24-.15a2.5 2.5 0 00.7-3.51c-18-26.37-45.62-30.34-56.73-30.82a50.04 50.04 0 00-4.95-.24c-13.06 0-25.56 4.93-35.61 8.9-6.94 2.73-12.93 5.09-17.06 5.09-4.64 0-10.67-2.4-17.65-5.16-9.33-3.7-19.9-7.9-31.1-7.9l-.79.01c-26.03.38-50.62 15.27-64.18 38.86z">
+              </path>
+              <path
+                d="M212.1 0c-15.76.64-34.67 10.35-45.97 23.58-9.6 11.13-19 29.68-16.52 48.38a2.5 2.5 0 002.29 2.17c1.06.08 2.15.12 3.23.12 15.41 0 32.04-8.52 43.4-22.25 11.94-14.5 17.99-33.1 16.16-49.77A2.52 2.52 0 00212.1 0z">
+              </path>
             </svg>
-          </a>
-          <a class="ml-3 text-gray-400">
-            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
-              <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
-              <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
-            </svg>
-          </a>
-          <a class="ml-3 text-gray-400">
-            <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
-              <path stroke="none" d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
-              <circle cx="4" cy="4" r="2" stroke="none"></circle>
-            </svg>
-          </a>
-        </span>
+            <span class="ml-4 flex items-start flex-col leading-none">
+              <span class="text-xs text-gray-600 mb-1">Download on the</span>
+              <span class="title-font font-medium">App Store</span>
+            </span>
+          </button>
+        </div>
       </div>
-    </footer>
-    <!--Footer Ends-->
-    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    </div>
+  </section>
+  <!--Download Ends-->
+
+  <!--Footer starts-->
+  <footer class="text-gray-600 body-font">
+    <div class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
+      <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
+        <img
+          src="data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHZpZXdCb3g9IjAgMCAxNzIgMTcyIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9Im5vbnplcm8iIHN0cm9rZT0ibm9uZSIgc3Ryb2tlLXdpZHRoPSIxIiBzdHJva2UtbGluZWNhcD0iYnV0dCIgc3Ryb2tlLWxpbmVqb2luPSJtaXRlciIgc3Ryb2tlLW1pdGVybGltaXQ9IjEwIiBzdHJva2UtZGFzaGFycmF5PSIiIHN0cm9rZS1kYXNob2Zmc2V0PSIwIiBmb250LWZhbWlseT0ibm9uZSIgZm9udC13ZWlnaHQ9Im5vbmUiIGZvbnQtc2l6ZT0ibm9uZSIgdGV4dC1hbmNob3I9Im5vbmUiIHN0eWxlPSJtaXgtYmxlbmQtbW9kZTogbm9ybWFsIj48cGF0aCBkPSJNMCwxNzJ2LTE3MmgxNzJ2MTcyeiIgZmlsbD0ibm9uZSI+PC9wYXRoPjxnIGZpbGw9IiNmZmZmZmYiPjxwYXRoIGQ9Ik00NS45MDI1LDQxLjI4Yy0yNC41OTA2MiwwIC00NC4xNDIxOSwxNy45MzkwNiAtNDUuOTAyNSw0MS4zODc1djEuMTgyNWMtMC4wNDAzMSwwLjc1MjUgLTAuMTA3NSwxLjQ5MTU2IC0wLjEwNzUsMi4yNTc1YzAsMC41NjQzOCAwLjA5NDA2LDEuMDg4NDQgMC4yMTUsMS42MTI1YzAuODA2MjUsMjQuNjMwOTQgMjAuMDA4NDQsNDMgNDUuMzY1LDQzYzE4LjYyNDM4LDAgMjguMTkxODgsLTExLjkwNTYyIDM1LjA0NSwtMjQuNjE3NWMtMi45MjkzNywtNC43MTY1NiAtNS41NzY1NiwtOS40NiAtOC4wNjI1LC0xNC4wODI1Yy02Ljc4NTk0LDE0LjkwMjE5IC0xMy4xMDE1NiwyNS4yNjI1IC0yNi45ODI1LDI1LjI2MjVjLTE4LjAzMzEyLDAgLTMxLjI0MjE5LC0xMi40NyAtMzEuOTI3NSwtMjkuNzc3NWMwLjA5NDA2LC0wLjQ0MzQ0IDAuMTA3NSwtMC45MjcxOSAwLjEwNzUsLTEuMzk3NWMwLC0xNy42OTcxOSAxMy44Njc1LC0zMS4wNjc1IDMyLjI1LC0zMS4wNjc1YzEzLjU1ODQ0LDAgMjEuMDU2NTYsMTIuMTc0MzggMzEuODIsMzIuMjVjMTAuODcwOTQsMjAuMjkwNjMgMjMuMjA2NTYsNDMuMzIyNSA1MC4wOTUsNDMuMzIyNWMyMi44ODQwNiwwIDQyLjI3NDM4LC0xOC40NjMxMiA0NC4wNzUsLTQxLjA2NWMwLjAyNjg4LC0wLjM4OTY5IDAuMDgwNjMsLTAuNzkyODEgMC4xMDc1LC0xLjE4MjVjMC4wNDAzMSwtMC43NTI1IDAuMTA3NSwtMS41MDUgMC4xMDc1LC0yLjI1NzVjMCwtMC41NjQzNyAtMC4wOTQwNiwtMS4wODg0NCAtMC4yMTUsLTEuNjEyNWMtMC44NDY1NiwtMjQuMzQ4NzUgLTIwLjI3NzE5LC00My4yMTUgLTQ1LjA0MjUsLTQzLjIxNWMtMTguODkzMTIsMCAtMjkuMTMyNSwxMi42MzEyNSAtMzYuNDQyNSwyNi4xMjI1YzEuOTM1LDMuMzg2MjUgMy42ODE4OCw2Ljg1MzEzIDUuNDgyNSwxMC4yMTI1YzAuODA2MjUsMS41MDUgMS41OTkwNiwyLjg4OTA2IDIuMzY1LDQuM2M2LjgxMjgxLC0xNC44ODg3NSAxMy43NDY1NiwtMjcuMTk3NSAyOC41OTUsLTI3LjE5NzVjMTguMDE5NjksMCAzMS4xMzQ2OSwxMi43NzkwNiAzMS42MDUsMzAuNDIyNWMtMC4wNDAzMSwwLjMwOTA2IC0wLjEwNzUsMC42NDUgLTAuMTA3NSwwLjk2NzVjMCwxNi4zODAzMSAtMTQuMjQzNzUsMzAuNzQ1IC0zMC41MywzMC43NDVjLTE4LjY1MTI1LDAgLTI4LjAxNzE5LC0xNy40ODIxOSAtMzcuOTQ3NSwtMzYuMDEyNWMtMTAuNDE0MDYsLTE5LjQ0NDA2IC0yMS4xOTA5NCwtMzkuNTYgLTQzLjk2NzUsLTM5LjU2eiI+PC9wYXRoPjwvZz48L2c+PC9zdmc+"
+          fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+          class="w-10 h-10 text-white p-2 bg-purple-500 rounded-full" viewBox="0 0 24 24">
+        <span class="ml-3 text-xl">Inifnity</span>
+      </a>
+      <p class="text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4">© 2023
+        Infinity-X —
+        <a href="https://twitter.com/knyttneve" class="text-gray-600 ml-1" rel="noopener noreferrer"
+          target="_blank">@Vikhyat_Kumar_Singh</a>
+      </p>
+      <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
+        <a class="text-gray-500">
+          <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5"
+            viewBox="0 0 24 24">
+            <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+          </svg>
+        </a>
+        <a class="ml-3 text-gray-500">
+          <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5"
+            viewBox="0 0 24 24">
+            <path
+              d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z">
+            </path>
+          </svg>
+        </a>
+        <a class="ml-3 text-gray-500">
+          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            class="w-5 h-5" viewBox="0 0 24 24">
+            <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+            <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+          </svg>
+        </a>
+        <a class="ml-3 text-gray-500">
+          <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="0"
+            class="w-5 h-5" viewBox="0 0 24 24">
+            <path stroke="none"
+              d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
+            <circle cx="4" cy="4" r="2" stroke="none"></circle>
+          </svg>
+        </a>
+      </span>
+    </div>
+  </footer>
+  <!--Footer Ends-->
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
