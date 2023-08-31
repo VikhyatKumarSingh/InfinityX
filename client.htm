@@ -1,0 +1,167 @@
+<!--<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Client Video Quality</title>
+    <style>
+       
+        .c_video-dimensions {
+            margin: 15px auto;
+            width: 640px;
+            height: 360px;
+        }
+
+        #player video {
+            width: 100%;
+            height: 100%;
+        }
+
+        .video-js .vjs-control {
+            padding: 10px;
+            background-color: rgba(26, 27, 31, 0.8)
+        }
+
+        .vjs-menu-button-popup .vjs-menu {
+            left: -6em;
+        }
+
+        .vjs-remaining-time.vjs-time-control.vjs-control {
+            display: none;
+        }
+
+        button.vjs-fullscreen-control.vjs-control.vjs-button {
+            display: none;
+        }
+
+        .vjs-volume-menu-button.vjs-menu-button.vjs-menu-button-inline.vjs-control.vjs-button.vjs-volume-menu-button-horizontal.vjs-vol-0 {
+            display: none;
+        }
+
+        .isme {
+            text-align: center;
+        }
+
+        a {
+            color: #3563D9;
+            text-align: center;
+            text-transform: lowercase;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="player">
+        <video id="c_video" controls preload="none" autoplay loop width="100vw" class="video-js vjs-default-skin">
+    
+            <source src="VID-20230331-WA0004.mp4" type="video/mp4">>
+                video/mp4
+            </video>
+    </div>
+    <script>
+        var options = {
+  //width: 100,
+  height: 360,
+  plugins: {
+    videoJsResolutionSwitcher: {
+      default: 'high',
+      dynamicLabel: true
+    }
+  }
+}
+
+var player = videojs('c_video', options);
+
+
+    </script>
+</body>
+
+</html>-->
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+    * {
+        font-family: 'IBM Plex Sans', sans-serif;
+      }
+      
+        .c_video-dimensions {
+              margin: 15px auto;
+              width: 640px;
+              height: 360px;
+            }
+            #player video {
+              width: 100%;
+              height: 100%;
+            }
+      
+            .video-js .vjs-control {
+              padding: 10px;
+              background-color: rgba(26, 27, 31, 0.8)
+            }
+      
+            .vjs-menu-button-popup .vjs-menu {
+              left: -6em;
+            }
+      
+            .vjs-remaining-time.vjs-time-control.vjs-control {
+              display: none;
+            }
+            button.vjs-fullscreen-control.vjs-control.vjs-button {
+              display: none;
+            }
+      
+      .vjs-volume-menu-button.vjs-menu-button.vjs-menu-button-inline.vjs-control.vjs-button.vjs-volume-menu-button-horizontal.vjs-vol-0 {
+        display: none;
+      }
+      
+        .isme {
+          text-align: center;
+        }
+        a {
+          color: #3563D9;
+          text-align: center;
+          text-transform: lowercase;
+        }</style>
+   <link href="https://vjs.zencdn.net/7.19.2/video-js.css"rel="stylesheet" />
+</head>
+   <body>
+    <div id="player">
+        <video id="c_video"
+               controls
+               preload="none"
+               autoplay
+               loop
+               width="100vw" class="video-js vjs-default-skin">
+          <source src="https://bitdash-a.akamaihd.net/content/MI201109210084_1/m3u8s/f08e80da-bf1d-4e3d-8899-f0f6155f6efa.m3u8" type="application/x-mpegURL">
+        </video>   
+        </div>    
+        
+        
+        <p class="isme">Find more at <a href="https://twitter.com/a4h8_"  target="_blank">Anis</a>,
+        <a href="https://github.com/videojs/video.js/" >
+        
+        </a></p>
+        <script>
+            var options = {
+  //width: 100,
+  height: 360,
+  plugins: {
+    videoJsResolutionSwitcher: {
+      default: 'high',
+      dynamicLabel: true
+    }
+  }
+}
+
+var player = videojs('c_video', options);
+
+
+        </script>
+
+</body>
+</html>

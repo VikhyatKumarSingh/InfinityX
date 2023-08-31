@@ -173,8 +173,12 @@
             </div>
           </div>
         </div>
-        <video class="object-cover object-center rounded-lg md:mt-0 mt-12" width="300" height="300" autoplay loop>
+        <video class="object-cover object-center rounded-lg md:mt-0 mt-12" id="myVideo"  width="300" height="300" autoplay loop>
           <source src="VID-20230331-WA0004.mp4" type="video/mp4">
+      
+    <source src="path/to/video_low_quality.mp4" type="video/mp4">
+    <source src="path/to/video_medium_quality.mp4" type="video/mp4">
+    <source src="path/to/video_high_quality.mp4" type="video/mp4">
           <!--<source src="VID-20230331-WA0001.ogg" type="video/ogg">
             Your browser does not support the video tag.-->
         </video>
@@ -275,6 +279,34 @@
     </div>
   </footer>
   <!--Footer Ends-->
+
+  <script>
+    function changeVideoQuality(quality) {
+    var video = document.getElementById("myVideo");
+    var source = video.getElementsByTagName("source")[0]; // Assuming only one <source> element
+  
+    //Here you have to be with 3 type of video like "High reslution video", "Medium resolution video" and "Low resolution video". 
+    //You can compress your video through any kind of video compressor online
+    switch (quality) {
+      case "low":
+        source.src = "path/to/video_low_quality.mp4";
+        break;
+      case "medium":
+        source.src = "path/to/video_medium_quality.mp4";
+        break;
+      case "high":
+        source.src = "path/to/video_high_quality.mp4";
+        break;
+      default:
+        // Handle any other cases if needed
+        break;
+    }
+  
+    video.load();
+    video.play();
+  }
+  
+  </script>
 
 </body>
 
